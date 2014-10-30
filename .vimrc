@@ -1,3 +1,5 @@
+" bboldi/myvimrc file - nothing special
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set background=dark
