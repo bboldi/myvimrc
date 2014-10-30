@@ -187,9 +187,11 @@ nnoremap j gj
 noremap k gk
 
 " :set guioptions-=m  "remove menu bar
+
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
+
 " phpdoc triggers
 
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
@@ -200,7 +202,7 @@ let g:UltiSnipsExpandTrigger="<c-s>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-v>"
 
-"YouCompleteMe install
+" YouCompleteMe install
 
 let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
 let g:ycm_server_keep_logfiles = 1
