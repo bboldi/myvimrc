@@ -54,6 +54,10 @@ nmap <silent> <leader>pi :PluginInstall!<CR>
 nmap <silent> <leader>o :only<CR>
 nmap <silent> <leader>t :TagbarToggle<CR>
 
+nmap <silent> <leader>s :split<CR>
+nmap <silent> <leader>hs :split<CR>
+nmap <silent> <leader>vs :vsplit<CR>
+
 nmap <leader>ff :Ag -i -u --php --silent '' .<Left><Left><Left>
 nmap <leader>fff :Ag -i -u --silent '' .<Left><Left><Left>
 nmap <leader>cu :!./composer.sh update<CR>
@@ -71,7 +75,7 @@ nmap <silent> <leader>l :bn<CR>
 nmap <silent> <leader>h :bp<CR>
 
 autocmd BufWritePre *.php :%s/\s\+$//e
-nmap <silent> <leader>ln :set invnumber<CR>
+nmap <silent> <leader>ln :set invnumber<CR>:GitGutterSignsToggle<CR>
 
 nmap <C-t> :tabnew<CR>
 map <C-t> :tabnew<CR>
