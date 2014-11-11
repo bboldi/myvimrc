@@ -82,6 +82,9 @@ map <C-t> :tabnew<CR>
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 
+map <silent> <leader>ss :mksession! ~/vim_session <CR> " quick save session
+map <silent> <leader>ls :source ~/vim_session <CR>		 " quick load session
+
 if !has("gui_running")
 	inoremap <C-@> <C-x><C-o>
 endif
