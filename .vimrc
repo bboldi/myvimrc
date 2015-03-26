@@ -8,8 +8,11 @@ scriptencoding utf-8
 set encoding=utf-8
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-Plugin 'gmarik/vundle'
+
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'tomasr/molokai'
@@ -40,6 +43,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
+call vundle#end()
 
 filetype plugin indent on
 
